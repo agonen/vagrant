@@ -1,0 +1,326 @@
+id,key_type,key,value
+1,cnc_sub_alert_type,cnc,Behavioral (HTTP )
+2,cnc_sub_alert_type,cnc,Reputation (HTTP)
+3,cnc_sub_alert_type,cnc,Reputation (HTTPS)
+4,cnc_sub_alert_type,cnc,Reputation (DNS)
+5,cnc_sub_alert_type,cnc,Reputation (HTTP)
+6,cnc_sub_alert_type,cnc,Reputation (HTTPS)
+7,cnc_sub_alert_type,cnc,Reputation (DNS)
+8,cnc_sub_alert_type,cnc,Self-Signed Cert (SSL)
+9,cnc_sub_alert_type,cnc,DGA
+10,cnc_sub_alert_type,cnc,Fast-Flux
+11,cnc_sub_alert_type,cnc,Not in used- Malicious File  File download - by Static File Analysis (HTTP)
+12,cnc_sub_alert_type,cnc,Not in used- Malicious File  Email attachment - by Static File Analysis (SMTP)
+14,cnc_sub_alert_type,cnc,Fast-Flux
+15,cnc_sub_alert_type,cnc,DGA
+27,feeds,load_status,in process
+28,feeds,load_status,successful
+29,feeds,load_status,failure
+30,feeds,app_type,C&C
+31,feeds,app_type,Endpoint
+32,feeds,app_type,Network Forensics
+33,feeds,app_type,File Analysis
+34,feeds,app_type,NW Lateral Movement
+35,feeds,app_type,Logstash
+36,feeds,app_type,brain
+40,alert_type,cnc,Behavioral analysis
+41,alert_type,cnc,Reputation list
+42,alert_type,cnc,Self-signed certificate
+43,alert_type,cnc,Host mismatch
+44,alert_type,cnc,Fast-flux
+45,alert_type,cnc,DGA
+52,alert_type,NWLME,ARP poisoning
+53,alert_type,NWLME,ICMP redirect
+54,alert_type,NWLME,MiTM
+55,alert_type,NWLME,IP Spoofing
+56,alert_type,NWLME,DHCP Rogue 
+57,alert_type,NWLME,DHCP Exhaust
+59,alert_type,NWLME,DNS Spoofing
+80,alert_type,EP,Endpoint Forensics
+90,alert_type,MFD,File
+91,alert_type,MFD,Email
+100,engine,id,C&C
+102,engine,id,Endpoint
+106,engine,id,File Analysis
+107,engine,id,NW Lateral Movement
+170,feed,feed_type,Intelligence feed
+171,feed,feed_type,Software feed
+172,feed,feed_status,Applied feed
+173,feed,feed_status,Fail to apply feed
+200,incident,stage,Unknown
+201,incident,stage,Data Exfiltration
+202,incident,stage,Spear Phishing
+203,incident,stage,Call Home
+204,incident,stage,Lateral Movement
+300,audit,type,Remediation
+301,audit,remediation,Delete malware from client
+302,audit,type,enrichment_rule
+303,audit,policy,Increase sensor sensitivity-LAN
+304,audit,policy,Increase sensor sensitivity-WAN
+305,audit,prevention,Prevention
+306,audit,type,Severity update
+307,audit,type,Owner update
+308,audit,type,Status update
+309,audit,type,Attack stage update
+311,audit,type,Merge
+310,audit,type,Response (Enrichment)
+340,observable,communication,source
+341,observable,communication,destination
+362,action,get_step_partial_record,Get step's partial info
+363,action,scan_file,File sent for analysis
+364,action,export_sessions_csv,Export NF sessions list by CSV
+365,action,get_audit_list,Get audit list
+366,action,add_links,Add links between observables
+367,action,create_software_update,Create software update
+368,action,delete_intelligence_feed,Delete intelligence feed
+369,action,create_intelligence_feed,Create intelligence feed
+370,action,get_intelligence_feeds  ,Get intelligence feeds
+371,action,update_organization,Update organization
+372,action,get_threats,Get threats
+373,action,create_new_enrichment,Create new enrichment
+374,action,get_enrichment_tags,Get enrichment tags
+375,action,get_enrichment_conflicts,Get enrichment conflicts
+376,action,delete_enrichment,Delete enrichment
+377,action,update_enrichment,Update enrichment
+378,action,get_enrichments_list,Get enrichments  list
+381,action,delete_organization,Delete organization
+382,action,update_location,Update location
+383,action,delete_location,Delete location
+384,action,add_new_location,Add new location
+385,action,add_new_organization,Add new organization
+386,action,get_server_log,Get server log
+387,action,get_server_performance,Get server performance
+388,action,get_servers_list,Get servers list
+390,action,get_organizations_list,Get organizations list
+392,action,get_users_list,Get users list
+393,action,merge_incidents,Merge incidents
+394,action,user_created,New user was added
+395,action,get_evidence_attachment,Download evidence attachment
+396,action,get_file_by_note,Download file by note id
+397,action,view_dashboard,User viewed dashboard
+398,action,get_file_by_observable,Download file by observable id
+399,action,get_nf_pcap,Download network forensics pcap
+400,action,create_incident,create_incident
+401,action,get_specific_incident,Get specific incident by ID
+402,action,get_incidents_list,Get Incidents list
+403,action,get_pcap_raw_data,Get Pcap raw data
+404,action,get_session_HTML,Get session HTML
+405,action,query_sessions_list,Query sessions list
+406,action,user_logout,Log out
+407,action,user_login,userLogin
+408,action,user_failed_auth,Failed Authentication
+409,action,user_updated_details,Updated Details
+410,action,user_access_route,Access Protected Route
+411,action,get_moloch_list,Get Network Forensics sessions list
+412,action,get_moloch_session_details,Get Network Forensics session details
+413,action,download_pcap,Download Network Forensics PCAP
+414,action,tps_forensics_tool_all_incidents,TPS Forensics Tool: All Incidents
+415,action,tps_forensics_tool_raw_alerts,TPS Forensics Tool: Raw Alerts
+416,action,add_link_to_findings,add link to findings
+417,action,tps_forensics_tool_show_alert,TPS Forensics Tool: Show Alert
+418,action,get_entire_incident,Requested entire incident
+419,action,get_records_for_workflow,Request all records for workflow
+420,action,get_full_records,Get full record info
+421,action,download_pcap,User Downloaded pcap
+422,action,download_file_by_alert_id,Downloaded file by alert id
+423,action,update_incident,User updated incident parameter
+424,action,add_note,User added note to incident
+425,action,delete_note,User Deleted note
+426,action,add_response,User added response
+427,action,delete_response,User deleted response
+428,action,update_Response,User updated response
+429,action,tps_forensics_tool_export_incidents,TPS Forensics Tool: Export Incidents
+430,enrichment,action_type,tag(s)
+431,enrichment,action_type,Reputation
+432,enrichment,action_type,Sensitive
+433,enrichment,action_type,Malware family
+434,prevention,action_type,add domain
+435,prevention,action_type,add file
+436,prevention,action_type,create snort rule 
+437,prevention,action_type,create yara rule
+438,prevention,action_type,create blocking rule
+439,prevention,action_type,add to reputation list
+440,actionable_intelligence,action_type,mark as actionable intelligence
+450,feature,incidents,user incidents actions
+451,feature,moloch,user Network Forensics actions
+452,feature,user,user authentication actions
+500,incident,status,Open
+501,incident,status,New
+502,incident,status,Reopen
+503,incident,status,In progress
+504,incident,status,On Hold
+505,incident,status,Pending Analyst
+506,incident,status,Closed
+507,incident,status,Not started
+508,incident,status,Fully Manual
+509,incident,status,Invisible Closed
+520,incident,close_reason,Resolve
+521,incident,close_reason,False Positive – no snooze
+522,incident,close_reason,Not enough evidences
+523,incident,close_reason,Created by mistake
+524,incident,close_reason,Other reason...
+540,incident,close_impact,None
+541,incident,close_impact,Minor
+542,incident,close_impact,Moderate
+543,incident,close_impact,Major
+544,incident,close_impact,Unknown
+560,brain_action,incident_created,New incident was created
+561,brain_action,severity_changed,Incident severity was changed
+562,brain_action,incident_merged,Incident merge to other incident
+563,brain_action,alert_added,Alert was added to incident
+564,brain_action,status_changed,Incident status has changed
+565,brain_action,recommended_merge,Recommend incident merge to other incident
+566,brain_action,recommended_severity_change,Recommend incident severity change
+567,brain_action,recommended_incident_close,Recommend incident to be close
+568,brain_action,mfd_scanned,Observable was sent to mfd scan
+569,brain_action,ef_scanned ,Observable was sent to ef scan
+570,brain_action,alert_created,New alert was created
+571,brain_action,alert_aggregated,Alert was aggregated to other alert
+572,brain_action,raw_alert_missing,Alert was not found in the raw alerts table
+580,workplan,alert_step_type,C&C
+581,workplan,alert_step_type,C&C - Evasion
+582,workplan,alert_step_type,File Analysis
+583,workplan,alert_step_type,Email Analysis
+584,workplan,alert_step_type,Endpoint Scanning
+585,workplan,alert_step_type,LM - ARP Poisoning
+586,workplan,alert_step_type,LM - ICMP Redirect
+587,workplan,alert_step_type,LM - MiTM
+588,workplan,alert_step_type,LM - IP Spoofing
+589,workplan,alert_step_type,LM - DHCP Rogue
+590,workplan,alert_step_type,LM - DHCP Exhaust
+591,workplan,alert_step_type,LM - DNS Spoofing
+600,incident,type,malware
+601,incident,type,malware
+620,workplan,step_type,alert
+621,workplan,step_type,audit
+622,workplan,step_type,response
+623,workplan,step_type,start
+624,workplan,step_type,incident_create
+625,workplan,step_type,web tool
+626,workplan,step_type,network_forensics
+627,workplan,step_type,manual_step
+628,workplan,step_type,enrichment
+629,workplan,step_type,recommendation
+630,workplan,manual_step_type,0
+631,workplan,manual_step_type,1
+632,workplan,manual_step_type,2
+640,workplan,manual_evidence,Custom
+641,workplan,manual_evidence,Phone call
+642,workplan,manual_evidence,Email received
+643,workplan,webtool,Who.Is
+644,workplan,webtool,deepviz
+645,workplan,webtool,malwr
+646,workplan,webtool,totalhash
+660,workplan,evidence_type,URL
+661,workplan,evidence_type,FILE
+662,workplan,evidence_type,TEXT
+680,workplan,recommendation_type,Close
+681,workplan,recommendation_type,Merge
+682,workplan,recommendation_type,Change Incident Severity
+700,observable,type,Endpoint
+701,observable,type,Server
+702,observable,type,FILE
+704,observable,type,MAIL
+719,observable,role,Unknown
+720,observable,role,Attacker
+721,observable,role,Victim
+722,observable,role,Both
+723,observable,location,Internal
+724,observable,location,External
+725,observable,location,Unknown
+726,observable,location,Both
+730,log_level,WARN,Warn
+731,log_level,ERROR,Error
+732,log_level,All,All
+740,default_users,system,TPS
+741,default_users,unassigned,Unassigned
+750,action,tps_forensics_tool_export_alerts,TPS Forensics Tool: Export Alerts
+751,action,delete_observable,User deleted observable
+752,action,update_observable,User updated observable
+753,action,turn_on_incident,Turn On Incident
+760,alert,incident_status,Tps automatic investigation
+761,alert,incident_status,exists in incident XYZ
+762,alert,incident_status,existed in incident XYZ
+763,alert,incident_status,not in incident
+770,match_route,ip range,external_ip
+771,match_route,ip range,interal_ip
+772,match_route,domain,domain
+773,match_route,geo_ip,geo_ip
+774,match_route,hash,hash
+775,match_route,mail,mail
+801,observable,machine_type,proxy
+802,observable,machine_type,unknown
+804,observable,machine_type,mail server
+805,observable,machine_type,work station
+806,observable,machine_type,file server
+820,observable,scan_status,STARTED
+821,observable,scan_status,COMPLETED
+822,observable,scan_status,ERROR
+830,observable,entity_type,C&C
+831,observable,entity_type,DNS
+832,observable,entity_type,DHCP
+833,observable,entity_type,Gateway
+834,observable,entity_type,Web
+835,observable,entity_type,Email Server
+836,observable,entity_type,Unknown
+837,observable,entity_type,MiTM
+838,observable,entity_type,Proxy
+841,observable,entity_type,Work Station
+842,observable,entity_type,File Server
+850,observable,state,victim
+851,observable,state,attacker
+852,observable,state,attackerMiTM
+853,observable,state,redirectedDestination
+854,observable,state,destinationSpoofed
+855,observable,state,originalGW
+856,observable,state,originalDHCP
+857,observable,state,originalDNS
+858,observable,state,victimSource
+859,observable,state,victimDestination
+860,observable,state,victimSpoofed
+861,observable,state,rogueDHCP
+862,observable,state,suspiciousDNS
+863,observable,state,suspiciousGW
+864,observable,state,attackerDNSServer
+865,observable,state,attackerMAC
+866,observable,state,Unknown
+880,lme,function,None
+881,lme,function,Source
+882,lme,function,Destination
+883,lme,function,Gateway
+884,lme,function,DHCP
+885,lme,function,DNS
+900,link_type,src,file
+901,link_type,src,mail
+903,link_type,mail,file
+904,link_type,src,dst
+905,link_type,dst,src
+906,link_type,src,src
+907,link_type,dst,mail
+908,link_type,dst,file
+909,link_type,dst,dst
+910,link,line_type,communication
+911,link,line_type,association
+920,network,protocol_type,UDP
+921,network,protocol_type,TCP
+922,network,protocol_type,Unknown
+930,gui,forensics_query_type,Alert
+931,gui,forensics_query_type,network_forensics
+932,gui,forensics_query_type,incident
+940,network,protocol,HTTP
+941,network,protocol,DNS
+942,network,protocol,SMTP
+943,network,protocol,HTTPS
+944,network,protocol,Unknown
+945,network,protocol,LLMNR
+946,network,protocol,NBNS
+950,management,threat_type,File MD5
+951,management,threat_type,Domain name
+952,management,threat_type,IP Address
+954,management,threat_type,Email
+960,management,list_type,black
+961,management,list_type,white
+971,enrichment_tag,score,white
+972,enrichment_tag,score,Neutral
+973,enrichment_tag,score,Black List
+1100,keys_to_text,440,Actionable Intelligence
