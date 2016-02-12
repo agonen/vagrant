@@ -1,0 +1,8 @@
+fake-factory
+elasticsearch
+enum34
+openpyxl
+redis
+hiredis
+psycopg2
+ldap3
