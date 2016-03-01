@@ -4,11 +4,21 @@ class { 'elasticsearch':
   version => '1.7.2'
 }
 
-elasticsearch::instance { 'es-01': }
-
-elasticsearch::plugin{'lmenezes/elasticsearch-kopf':
-  instances  => 'es-01'
+$config_hash = {
+  'ES_HEAP_SIZE' => '500m',
+  'node.name' => 'es1.tps.cyber.local',
+  'node.routing' => 'es1.tps.cyber.local_1'
 }
+
+
+
+elasticsearch::instance { 'es':
+  config => { },        # Configuration hash
+  init_defaults => $config_hash, # Init defaults hash
+}
+
+#elasticsearch::python { 'rawes': }
+
 
 class { 'redis::install': }
 

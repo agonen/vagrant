@@ -29,7 +29,15 @@ echo debconf shared/accepted-oracle-license-v1-1 select true |  sudo debconf-set
 echo debconf shared/accepted-oracle-license-v1-1 seen true |  sudo debconf-set-selections
 
 sudo /usr/bin/apt-get install -y  oracle-java8-installer
+
+# install elasticsearch 1.7
 sudo apt-get install -y  elasticsearch
+sudo /usr/share/elasticsearch/bin/plugin -install knapsack -url http://xbib.org/repository/org/xbib/elasticsearch/plugin/elasticsearch-knapsack/1.7.2.0/elasticsearch-knapsack-1.7.2.0-plugin.zip
+sudo /usr/share/elasticsearch/bin/plugin --install lmenezes/elasticsearch-kopf/1.0
+
+sudo ln -s -T /vagrant_data/etc/elasticsearch /etc/elasticsearch
+sudo ln -s -T /vagrant_data/etc/init.d/elasticsearch /etc/init.d/elasticsearch
+
 
 sudo apt-get install transmission-gtk transmission-cli transmission-common transmission-daemon
 
@@ -54,6 +62,9 @@ updatedb
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 sudo npm install mocha -g
+# upgrade npm
+sudo npm install npm -g
+sudo npm install npm -g
 
 mkdir -p  /home/vagrant/Downloads/transmission
 cd   /home/vagrant/Downloads/transmission

@@ -6,3 +6,4 @@ redis
 hiredis
 psycopg2
 ldap3
+pgcli
